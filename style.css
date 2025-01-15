@@ -1,0 +1,106 @@
+body {
+  font-family: "Pretendard Variable", "Pretendard", Arial, "Malgun Gothic", sans-serif !important;
+  color: #000;
+  font-size: 14px;
+  letter-spacing: -0.2px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+#header-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+}
+
+#header-inner > a {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav > ul > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 120px;
+  height: 120px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+#section1 {
+  padding-top: 220px;
+  height: 1500px;
+}
+
+#section1-txt {
+  text-align: center;
+}
+
+#section1-txt > span {
+  line-height: 48px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#section1-txt > p {
+  line-height: 89px;
+  font-size: 64px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+#section1-video-inner {
+  clip-path: inset(0px calc(50% - 315px) round 20px);
+}
+
+#section1-logos {
+  position: absolute;
+  top: 684px;
+}
+
+#section1-logos > ul {
+  display: flex;
+  gap: 56px;
+  animation: logoflow 10s linear infinite;
+}
+
+@keyframes logoflow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#section1-logos > ul:hover {
+  animation-play-state: paused;
+}
+
+#section1-logos > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 100px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 999px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
