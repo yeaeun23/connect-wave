@@ -65,6 +65,21 @@ function init() {
           { width: "auto", margin: "0 5px 0 10px", duration: 0.2 },
           0.5
         );
+
+      /* section4 웨이브 */
+      let panels = gsap.utils.toArray(".wave-panel");
+      gsap.to(panels, {
+        ease: "none", // 일정한 속도로
+        xPercent: -100 * panels.length, // 왼쪽으로 이동
+        scrollTrigger: {
+          trigger: "#section4",
+          start: "top top",
+          end: "+=1000%",
+          scrub: 1,
+          pin: true,
+          anticipatePin: 1,
+        },
+      });
     },
   });
 
