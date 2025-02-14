@@ -152,3 +152,34 @@ nav > ul > li > a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* section3 줌 */
+#section3 {
+  height: 100vh;
+  background-color: #000;
+}
+
+#section3-zoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  clip-path: inset(50%);
+  background-color: #fff;
+}
+
+#section3-txt {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 89px;
+  text-align: center;
+}
+
+#section3-txt > img {
+  vertical-align: middle;
+}

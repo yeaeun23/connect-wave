@@ -44,6 +44,27 @@ function init() {
           duration: 0.1,
         })
         .fromTo("#section2-slate-video > img", { opacity: 0 }, { opacity: 1, duration: 0.3 });
+
+      /* section3 줌 */
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#section3",
+            start: "top top",
+            end: "+=600%",
+            scrub: 1,
+            pin: true,
+            anticipatePin: 1,
+          },
+        })
+        .to("#section3-zoom", { clipPath: "inset(-10% round 20px)" })
+        .to("#section3-txt > strong", { color: "#2D3EBD" }, 0.5)
+        .fromTo(
+          "#section3-txt > img",
+          { width: "0", margin: "0" },
+          { width: "auto", margin: "0 5px 0 10px", duration: 0.2 },
+          0.5
+        );
     },
   });
 
