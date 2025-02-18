@@ -43,6 +43,10 @@ nav > ul > li > a {
   color: #333;
 }
 
+nav > ul > li:nth-child(6) > a {
+  gap: 5px;
+}
+
 /* section1 비디오 */
 #section1 {
   padding-top: 220px;
@@ -302,10 +306,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#footer-right > img {
-  width: 12px;
 }
 
 #footer-right > ul {
