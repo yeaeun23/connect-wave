@@ -47,6 +47,13 @@ nav > ul > li:nth-child(6) > a {
   gap: 5px;
 }
 
+nav > ul > li:nth-child(6) > a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url("./icons/ic-arrow-link2.svg");
+}
+
 /* section1 비디오 */
 #section1 {
   padding-top: 220px;
@@ -244,8 +251,11 @@ nav > ul > li:nth-child(6) > a {
   align-items: center;
 }
 
-.wave-panel-top > a > img {
+.wave-panel-top > a::after {
+  content: "";
   width: 20px;
+  height: 20px;
+  background-image: url("./icons/ic-arrow-link.svg");
 }
 
 .wave-panel-bottom {
