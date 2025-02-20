@@ -266,6 +266,7 @@ nav > ul > li:nth-child(6) > a {
   line-height: 135px;
 }
 
+/* 푸터 */
 footer {
   border-top: 1px solid #eee;
 }
@@ -336,4 +337,18 @@ footer {
 #footer-right > ul > li > a:hover {
   color: #000;
   background-color: #f8f8f8;
+}
+
+/* TOP 버튼 */
+#scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 99px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  cursor: pointer;
 }

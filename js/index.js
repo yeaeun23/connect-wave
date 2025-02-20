@@ -85,3 +85,19 @@ function init() {
 
   window.addEventListener("resize", ScrollTrigger.update);
 }
+
+// TOP 버튼 숨기기
+$("#scroll-top").hide();
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 100) {
+    $("#scroll-top").fadeIn();
+  } else {
+    $("#scroll-top").fadeOut();
+  }
+});
+
+// TOP 버튼 클릭 이벤트
+$("#scroll-top").on("click", function () {
+  $("body, html").animate({ scrollTop: 0 }, 800);
+  return false;
+});
